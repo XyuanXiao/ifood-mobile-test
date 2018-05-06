@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Twitter Feelings</string>
     <string name="search_twitter_user">Search Twitter user</string>
-    <string name="search_twitter_user_tutorial">Search a Twitter user to see here his/her last tweets</string>
+    <string name="search_twitter_user_tutorial">Search a Twitter user</string>
+    <string name="search_twitter_user_error">Sorry, we could not get tweets from:\n</string>
+    <string name="tweet_sentiment_icon">Tweet sentiment icon</string>
 </resources>
