@@ -4,4 +4,5 @@
     <string name="search_twitter_user_tutorial">Search a Twitter user</string>
     <string name="search_twitter_user_error">Sorry, we could not get tweets from:\n</string>
     <string name="tweet_sentiment_icon">Tweet sentiment icon</string>
+    <string name="search">Search</string>
 </resources>

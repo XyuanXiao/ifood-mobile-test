@@ -1,11 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.ifoodchallenge.xyuan.xyuanifoodchallenge.SearchTweetsActivity">
+    tools:context="com.ifoodchallenge.xyuan.xyuanifoodchallenge.ui.SearchTweetsActivity">
 
     <item
         android:id="@+id/menu_search"
         android:title="@string/search_twitter_user"
-        android:icon="@android:drawable/ic_menu_search"
-        app:showAsAction="ifRoom|withText" />
+        app:showAsAction="never"/>
 </menu>

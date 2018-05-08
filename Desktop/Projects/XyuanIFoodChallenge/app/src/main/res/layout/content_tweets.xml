@@ -7,18 +7,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".SearchTweetsActivity"
+    tools:context=".ui.SearchTweetsActivity"
     tools:showIn="@layout/activity_search_tweets">
 
-    <android.support.v7.widget.SearchView
-        android:id="@+id/search_user"
+    <EditText
+        android:id="@+id/edit_search"
         android:layout_width="match_parent"
         android:layout_height="@dimen/message_height"
         android:padding="@dimen/text_margin"
-        android:gravity="center"
         android:visibility="visible"
-        app:iconifiedByDefault="false"
-        app:queryHint="@string/search_twitter_user_tutorial"/>
+        android:scrollHorizontally="true"
+        android:maxLines="1"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:maxLength="500"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:imeActionLabel="@string/search"
+        android:hint="@string/search_twitter_user_tutorial"/>
 
     <TextView
         android:id="@+id/text_search_error"
@@ -26,7 +32,7 @@
         android:layout_height="@dimen/message_height"
         android:padding="@dimen/text_margin"
         android:gravity="center"
-        android:visibility="visible"
+        android:visibility="gone"
         android:textSize="@dimen/common_message_size"
         android:text="@string/search_twitter_user_error"/>
 
@@ -35,13 +41,13 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/message_height"
         android:padding="@dimen/text_margin"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_tweets"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
 </LinearLayout>
