@@ -28,6 +28,6 @@ class SearchTweetsModule(
   @ActivityScope
   fun providesSearchTweetModel(
       api: TwitterApi
-  ) = SearchTweetsModel(searchTweetsActivity, api)
+  ) = SearchTweetsModel(api)
 
 }
