@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">Twitter Feelings</string>
+    <string name="app_name">Feel few Tweets</string>
     <string name="search_twitter_user">Search Twitter user</string>
     <string name="search_twitter_user_tutorial">Search a Twitter user</string>
-    <string name="search_twitter_user_error">Sorry, we could not get tweets from:\n</string>
+    <string name="search_twitter_user_error">Sorry, we could not get tweets from: %s\n</string>
     <string name="tweet_sentiment_icon">Tweet sentiment icon</string>
     <string name="search">Search</string>
+    <string name="noInternetConn">No internet. Please, check your connection</string>
+    <string name="invalidUser">Please type a valid user search</string>
 </resources>
