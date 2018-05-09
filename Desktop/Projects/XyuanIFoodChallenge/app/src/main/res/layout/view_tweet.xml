@@ -29,7 +29,7 @@
             <ImageView
                 android:id="@+id/image_tweet_feeling"
                 android:layout_width="@dimen/card_action_width"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/card_action_width"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_sentiment_neutral_black_36dp"
                 android:visibility="gone"

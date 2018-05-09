@@ -10,6 +10,7 @@ object SearchTweetsContract {
     fun onSearchMenuPressed(): Boolean
     fun onSearchUserPressed(user: String, actionId: Int): Boolean
     fun onTweetClicked(tweet: Tweet, position: Int)
+    fun onViewDestroyed()
   }
 
   interface View {
@@ -26,5 +27,6 @@ object SearchTweetsContract {
     fun networkAvailable(): Boolean
     fun snackNoInternet()
     fun snackInvalidUser()
+    fun snackSearchError()
   }
 }

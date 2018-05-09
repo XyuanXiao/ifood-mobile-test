@@ -167,7 +167,7 @@ class SearchTweetsActivity : AppCompatActivity(),
     Snackbar.make(
         window.decorView.findViewById(android.R.id.content),
         R.string.noInternetConn,
-        Snackbar.LENGTH_SHORT
+        Snackbar.LENGTH_LONG
     ).show()
   }
 
@@ -175,7 +175,20 @@ class SearchTweetsActivity : AppCompatActivity(),
     Snackbar.make(
         window.decorView.findViewById(android.R.id.content),
         R.string.invalidUser,
-        Snackbar.LENGTH_SHORT
+        Snackbar.LENGTH_LONG
     ).show()
+  }
+
+  override fun snackSearchError() {
+    Snackbar.make(
+        window.decorView.findViewById(android.R.id.content),
+        R.string.searchError,
+        Snackbar.LENGTH_LONG
+    ).show()
+  }
+
+  override fun onDestroy() {
+    presenter.onViewDestroyed()
+    super.onDestroy()
   }
 }

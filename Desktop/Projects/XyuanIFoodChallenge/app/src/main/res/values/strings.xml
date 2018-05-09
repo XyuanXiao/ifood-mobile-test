@@ -7,4 +7,5 @@
     <string name="search">Search</string>
     <string name="noInternetConn">No internet. Please, check your connection</string>
     <string name="invalidUser">Please type a valid user search</string>
+    <string name="searchError">Sorry,an error occured during the search</string>
 </resources>
