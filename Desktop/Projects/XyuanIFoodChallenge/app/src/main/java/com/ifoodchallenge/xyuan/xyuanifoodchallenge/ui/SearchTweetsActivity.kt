@@ -146,6 +146,10 @@ class SearchTweetsActivity : AppCompatActivity(),
     tweetsAdapter.notifyDataSetChanged()
   }
 
+  override fun clearTweetsList() {
+    tweetsAdapter.clear()
+  }
+
   override fun updateTweet(position: Int) {
     tweetsAdapter.notifyItemChanged(position)
   }

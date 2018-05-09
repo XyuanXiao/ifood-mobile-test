@@ -20,7 +20,7 @@ class SearchTweetsPresenter(
   private val TWEETS_LIST_KEY = "tweets_list_key"
 
   private lateinit var view: SearchTweetsContract.View
-  private lateinit var tweetsList: ArrayList<Tweet>
+  private var tweetsList = ArrayList<Tweet>()
   private lateinit var selectedTweetText: String
   private var subscriptions = CompositeDisposable()
   private var searchTweetsInProgress = false
@@ -67,6 +67,10 @@ class SearchTweetsPresenter(
         if (view.networkAvailable()) {
           subscriptions.add(getTweetsFromApi(user))
           searchTweetsInProgress = true
+
+          tweetsList.clear()
+          view.clearTweetsList()
+
           view.hideKeyboard()
           searchProgressLayout()
         } else {
@@ -158,6 +162,7 @@ class SearchTweetsPresenter(
     view.toggleSearchView(false)
     view.toggleSearchError(false)
     view.toggleSearchProgress(true)
+    view.toggleTweetsList(false)
   }
 
   private fun searchSuccessLayout() {

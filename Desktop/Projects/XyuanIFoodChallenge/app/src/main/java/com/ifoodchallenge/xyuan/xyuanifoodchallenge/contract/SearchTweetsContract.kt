@@ -20,6 +20,7 @@ object SearchTweetsContract {
     fun toggleTweetsList(visible: Boolean)
     fun updateErrorMessage(user: String)
     fun updateTweetsList(tweetsList: List<Tweet>)
+    fun clearTweetsList()
     fun updateTweet(position: Int)
     fun hideKeyboard()
     fun networkAvailable(): Boolean
